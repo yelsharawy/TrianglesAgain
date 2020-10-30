@@ -67,4 +67,16 @@ public class Triangle {
     public String toString() {
         return "v1" + v1 + " v2" + v2 + " v3" + v3;
     }
+
+    @Override
+    public boolean equals(Object other) {
+        return other instanceof Triangle && equals((Triangle)other);
+    }
+
+    public boolean equals(Triangle other) {
+        // EXACTLY equivalent:
+        return other != null &&
+            v1.equals(other.v1) && v2.equals(other.v2) && v3.equals(other.v3);
+    }
+    
 }
