@@ -30,4 +30,18 @@ public class Point {
         return Math.sqrt(dx*dx + dy*dy);
     }
 
+    @Override
+    public boolean equals(Object other) {
+        return other instanceof Point && equals((Point)other);
+    }
+
+    @Override
+    public int hashCode() {  // the linter was bothering me about it...
+        return 31 * Double.hashCode(x) + Double.hashCode(y);
+    }
+
+    public boolean equals(Point other) {
+        return x == other.x && y == other.y;
+    }
+
 }
