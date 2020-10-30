@@ -46,6 +46,11 @@ public class Tester {
         System.out.println(t1.getArea());  // 6.0
         System.out.print("t2.getArea() -> ");
         System.out.println(t2.getArea());  // 6.0
+        System.out.println();  // good time to mention these are not thorough...
+        System.out.print("t1.classify() -> ");
+        System.out.println(t1.classify());  // scalene
+        System.out.print("t2.classify() -> ");
+        System.out.println(t2.classify());  // scalene
     }
 
 }

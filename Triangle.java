@@ -27,6 +27,27 @@ public class Triangle {
         return Math.sqrt(S * (S-a) * (S-b) * (S-c));
     }
 
+    public static final double ROUND_PRECISION = 1e4;
+
+    private static double round(double x) {
+        return Math.round(x * ROUND_PRECISION) / ROUND_PRECISION;
+    }
+
+    public String classify() {
+        double a = round(v2.distanceTo(v3));
+        double b = round(v3.distanceTo(v1));
+        double c = round(v1.distanceTo(v2));
+        if (a == b) {
+            if (a == c) {
+                return "equilateral";
+            }
+            return "isosceles";
+        } else if (a == c || b == c) {
+            return "isosceles";
+        }
+        return "scalene";
+    }
+
     public String toString() {
         return "v1" + v1 + " v2" + v2 + " v3" + v3;
     }
