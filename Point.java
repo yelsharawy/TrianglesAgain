@@ -24,4 +24,10 @@ public class Point {
         return "(" + x + ", " + y + ")";
     }
 
+    public double distanceTo(Point other) {
+        double dx = other.x - x;
+        double dy = other.y - y;
+        return Math.sqrt(dx*dx + dy*dy);
+    }
+
 }

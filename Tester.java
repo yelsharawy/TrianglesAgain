@@ -9,6 +9,13 @@ public class Tester {
         System.out.print("p2 -> ");
         System.out.println(p2);  // (3.0, 4.0)
         System.out.println();
+
+        p1 = new Point(0, 0);
+        System.out.print("p1.distanceTo(p2) -> ");
+        System.out.println(p1.distanceTo(p2));  // 5.0
+        System.out.print("p2.distanceTo(p1) -> ");
+        System.out.println(p2.distanceTo(p1));  // 5.0
+        System.out.println();
     }
 
 }
