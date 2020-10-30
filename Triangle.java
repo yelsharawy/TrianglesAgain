@@ -19,6 +19,14 @@ public class Triangle {
         return a + b + c;
     }
 
+    public double getArea() {
+        double a = v2.distanceTo(v3);
+        double b = v3.distanceTo(v1);
+        double c = v1.distanceTo(v2);
+        double S = getPerimeter() / 2;
+        return Math.sqrt(S * (S-a) * (S-b) * (S-c));
+    }
+
     public String toString() {
         return "v1" + v1 + " v2" + v2 + " v3" + v3;
     }

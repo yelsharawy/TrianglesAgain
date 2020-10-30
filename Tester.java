@@ -41,6 +41,11 @@ public class Tester {
         System.out.println(t1.getPerimeter());  // 12.0
         System.out.print("t2.getPerimeter() -> ");
         System.out.println(t2.getPerimeter());  // 12.0
+        System.out.println();
+        System.out.print("t1.getArea() -> ");
+        System.out.println(t1.getArea());  // 6.0
+        System.out.print("t2.getArea() -> ");
+        System.out.println(t2.getArea());  // 6.0
     }
 
 }
