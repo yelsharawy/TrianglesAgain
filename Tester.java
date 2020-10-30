@@ -26,6 +26,12 @@ public class Tester {
         System.out.print("p2.distanceTo(p1) -> ");
         System.out.println(p2.distanceTo(p1));  // 5.0
         System.out.println();
+
+        System.out.println();
+
+        System.out.println("Triangle tests:");
+        new Triangle(p1, p2, new Point(3, 0));
+        new Triangle(0, 0, 3, 4, 3, 0);
     }
 
 }
