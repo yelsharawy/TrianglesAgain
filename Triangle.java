@@ -12,6 +12,22 @@ public class Triangle {
         this(new Point(x1, y1), new Point(x2, y2), new Point(x3, y3));
     }
 
+    public void setVertex(int index, Point newP) {
+        switch (index) {
+            case 0:
+                v1 = newP;
+                break;
+            case 1:
+                v2 = newP;
+                break;
+            case 2:
+                v3 = newP;
+                break;
+            default:
+                System.out.println("Invalid index given for setVertex!");
+        }
+    }
+
     public double getPerimeter() {
         double a = v2.distanceTo(v3);
         double b = v3.distanceTo(v1);

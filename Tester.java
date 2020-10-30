@@ -51,6 +51,10 @@ public class Tester {
         System.out.println(t1.classify());  // scalene
         System.out.print("t2.classify() -> ");
         System.out.println(t2.classify());  // scalene
+        System.out.println();
+        System.out.print("t1 -> ");
+        t1.setVertex(2, new Point(6, 0));
+        System.out.println(t1);
     }
 
 }
