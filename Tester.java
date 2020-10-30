@@ -2,11 +2,11 @@ public class Tester {
 
     public static void main(String[] args) {
         System.out.println("Point tests:");
-        Point p1 = new Point(3, 4);
         System.out.print("p1 -> ");
+        Point p1 = new Point(3, 4);
         System.out.println(p1);  // (3.0, 4.0)
-        Point p2 = new Point(p1);
         System.out.print("p2 -> ");
+        Point p2 = new Point(p1);
         System.out.println(p2);  // (3.0, 4.0)
         System.out.println();
 
@@ -30,10 +30,17 @@ public class Tester {
         System.out.println();
 
         System.out.println("Triangle tests:");
+        System.out.print("t1 -> ");
         Triangle t1 = new Triangle(p1, p2, new Point(3, 0));
         System.out.println(t1);  // v1(0.0, 0.0) v2(3.0, 4.0) v3(3.0, 0.0)
+        System.out.print("t2 -> ");
         Triangle t2 = new Triangle(0, 0, 3, 4, 0, 4);
         System.out.println(t2);  // v1(0.0, 0.0) v2(3.0, 4.0) v3(0.0, 4.0)
+        System.out.println();
+        System.out.print("t1.getPerimeter() -> ");
+        System.out.println(t1.getPerimeter());  // 12.0
+        System.out.print("t2.getPerimeter() -> ");
+        System.out.println(t2.getPerimeter());  // 12.0
     }
 
 }
