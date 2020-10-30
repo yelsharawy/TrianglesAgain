@@ -7,6 +7,10 @@ public class Point {
         y = Y;
     }
 
+    public Point(Point p) {
+        this(p.x, p.y);
+    }
+
     public double getX() {
         return x;
     }
@@ -14,5 +18,5 @@ public class Point {
     public double getY() {
         return y;
     }
-    
+
 }
