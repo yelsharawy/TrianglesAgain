@@ -30,8 +30,10 @@ public class Tester {
         System.out.println();
 
         System.out.println("Triangle tests:");
-        new Triangle(p1, p2, new Point(3, 0));
-        new Triangle(0, 0, 3, 4, 3, 0);
+        Triangle t1 = new Triangle(p1, p2, new Point(3, 0));
+        System.out.println(t1);  // v1(0.0, 0.0) v2(3.0, 4.0) v3(3.0, 0.0)
+        Triangle t2 = new Triangle(0, 0, 3, 4, 0, 4);
+        System.out.println(t2);  // v1(0.0, 0.0) v2(3.0, 4.0) v3(0.0, 4.0)
     }
 
 }

@@ -12,4 +12,7 @@ public class Triangle {
         this(new Point(x1, y1), new Point(x2, y2), new Point(x3, y3));
     }
 
+    public String toString() {
+        return "v1" + v1 + " v2" + v2 + " v3" + v3;
+    }
 }
